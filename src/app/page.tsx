@@ -17,23 +17,23 @@ import {
 export default function RoPartsLanding() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-blue-50">
+      <header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-gradient-to-l from-blue-50 to-gray-100">
         <Link className="flex items-center justify-center" href="#">
-          <Droplet className="h-6 w-6" />
-          <span className="ml-2 text-lg font-bold text-blue-900">RO Parts Co.</span>
+          <Droplet className="h-6 w-6 text-blue-900" />
+          <span className="ml-2 text-lg font-bold text-blue-900 hidden md:flex">RO Parts Co.</span>
         </Link>
-        <form className="hidden md:flex items-center space-x-2">
+        <form className="flex items-center space-x-2">
           <Input
             type="search"
             placeholder="Search RO parts..."
-            className="w-[200px] lg:w-[500px] h-10 bg-white"
+            className="w-[300px] lg:w-[500px] h-10 bg-gray-50 placeholder:px-2"
           />
           <Button type="submit" size="icon" variant="ghost">
             <Search className="h-5 w-5" />
             <span className="sr-only">Search</span>
           </Button>
         </form>
-        <div className="flex items-center space-x-4">
+        <div className="flex justify-center items-center">
           <Link className="hidden md:inline-flex" href="#">
             <ShoppingCart className="h-5 w-5" />
           </Link>
@@ -65,19 +65,6 @@ export default function RoPartsLanding() {
                   Cart
                 </Link>
               </nav>
-              <div className="mt-4">
-                <form className="flex items-center space-x-2">
-                  <Input
-                    type="search"
-                    placeholder="Search RO parts..."
-                    className="flex-1"
-                  />
-                  <Button type="submit" size="icon" variant="ghost">
-                    <Search className="h-4 w-4" />
-                    <span className="sr-only">Search</span>
-                  </Button>
-                </form>
-              </div>
             </SheetContent>
           </Sheet>
         </div>
@@ -163,7 +150,7 @@ export default function RoPartsLanding() {
                 Call for Service
               </Button>
               <p className="text-sm text-primary-foreground/60">
-                Available Monday to Friday, 9AM - 5PM
+                Available All Days, 9AM - 6PM
               </p>
             </div>
           </div>
