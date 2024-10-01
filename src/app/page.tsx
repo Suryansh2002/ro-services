@@ -17,16 +17,16 @@ import {
 export default function RoPartsLanding() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="px-4 lg:px-6 h-16 flex items-center justify-between bg-gradient-to-l from-blue-50 to-gray-100">
-        <Link className="flex items-center justify-center" href="#">
+      <header className="px-2 lg:px-6 h-16 flex items-center justify-between bg-gradient-to-l from-blue-50 to-gray-100">
+        <div className="flex items-center justify-center px-2">
           <Droplet className="h-6 w-6 text-blue-900" />
           <span className="ml-2 text-lg font-bold text-blue-900 hidden md:flex">RO Parts Co.</span>
-        </Link>
-        <form className="flex items-center space-x-2">
+        </div>
+        <form className="flex flex-1 justify-center items-center space-x-2">
           <Input
             type="search"
             placeholder="Search RO parts..."
-            className="w-[300px] lg:w-[500px] h-10 bg-gray-50 placeholder:px-2"
+            className="flex-1 lg:max-w-[500px] h-10 bg-gray-50 placeholder:px-2"
           />
           <Button type="submit" size="icon" variant="ghost">
             <Search className="h-5 w-5" />
